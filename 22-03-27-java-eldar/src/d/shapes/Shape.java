@@ -24,6 +24,6 @@ public abstract class Shape {
 	}
 
 	// an abstract method (only in abstract class)
-	public abstract double getArea();
+	public abstract double getArea(); 
 
 }
