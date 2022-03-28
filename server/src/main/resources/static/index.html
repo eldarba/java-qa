@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>calculator</h1>
+    a <input id="a" type="number">
+    <br>
+    <br>
+    b <input id="b" type="number">
+    <br>
+    <br>
+    <button onclick="requestFromServer()">Add</button>
+    <br>
+    <br>
+    <div id="resp"></div>
+
+    <script>
+        function requestFromServer() {
+            // create a JS object that can make requests
+            let xhttp = new XMLHttpRequest();
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+            console.log(a);
+            console.log(b);
+            // open a request
+            let url = "http://10.103.50.14:8080/add/" + a + "/" + b;
+            console.log(url);
+            xhttp.onreadystatechange = function (params) {
+                if(this.readyState==4){
+                    document.getElementById("resp").innerHTML = this.response;
+                }
+            }
+            xhttp.open("GET", url);
+            xhttp.send();
+        }
+    </script>
+
+</body>
+</html>
