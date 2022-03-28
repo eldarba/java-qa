@@ -1,14 +1,19 @@
 package a.arrays;
 
+import java.util.Arrays;
+
 public class Demo4 {
 
 	public static void main(String[] args) {
 
-		// random number 0 - 10
-		System.out.println((int) (Math.random() * 11));
+		// array static initialization
+		int[] numbers = { 2, 4, 6, 8 };
 
-		// random number 0 - 100
-		System.out.println((int) (Math.random() * 101));
+		// array static initialization
+		String[] names = { "Dan", "Ran", "Lea" };
+
+		System.out.println(Arrays.toString(numbers));
+		System.out.println(Arrays.toString(names));
 
 	}
 
