@@ -1,9 +1,10 @@
 package a.arrays;
 
+import java.util.Arrays;
+
 public class Demo1 {
 
 	public static void main(String[] args) {
-
 		// create an array of 5 int elements
 		int[] arr1 = new int[5];
 		// populate array with data
@@ -18,6 +19,8 @@ public class Demo1 {
 		System.out.println(arr1[2]);
 		System.out.println(arr1[3]);
 		System.out.println(arr1[4]);
+		// print the array as String
+		System.out.println(Arrays.toString(arr1));
 
 	}
 }
