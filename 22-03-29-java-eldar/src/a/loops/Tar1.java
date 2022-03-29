@@ -7,13 +7,19 @@ public class Tar1 {
 	 * from 1 to that number
 	 */
 	public static void main(String[] args) {
-		
-		// 1. create the random number
-		
-		// 2. print it
-		
-		// 3. print all numbers from 0 to the random number (using loop)
 
-	}
+		// 1. create the random number
+		int r = (int) (Math.random() * 26);
+
+		// 2. print it
+		System.out.println(r);
+		System.out.println("============");
+
+		// 3. print all numbers from 0 to the random number (using loop)
+		for (int i = 0; i <= r; i++) {
+			System.out.println(i);
+		}
+
+	} 
 
 }
